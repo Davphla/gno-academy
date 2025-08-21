@@ -1,5 +1,4 @@
 # Workshop
-
 - Introduction - What is gno ? Your first realm
 - Exercise - Accompagnement vidéo
 - Event - Hackathon like, create your best result
@@ -32,7 +31,6 @@ What we should do:
 
 Workshop de hackathon par exemple, piscine
 Hackathon avec des objectifs principal et des sides quest
-
 
 - gnoArt: realm de register + open subjects
     - ma galerie d'art décentralisé, ou l'inventaire Steam libre et ouvert. 
