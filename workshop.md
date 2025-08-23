@@ -23,9 +23,12 @@ Before diving into realm creation, we need to ensure your development environmen
     
     → basic setup, tools, and testing environment
     
-- *Share video link***:** *“Build and test your first dApp — GnoLand Education Tutorial”*
+### 📺 Watch:
+- [Setup local environment](https://www.youtube.com/watch?v=C8RuA_uU3Fs)
+- [Extend your IDE capabilities with Gnopls](https://www.youtube.com/watch?v=-byuFoVYp30)
+- [Build and test your first dApp](https://www.youtube.com/watch?v=nzo6QgxQHgw&t=161s)
     
-> 💡 **Tip**: We recommend watching both videos before the workshop and attempting to run the basic examples. This will help you get the most out of our live session!
+> 💡 **Tip**: We recommend watching these videos before the workshop and attempting to run the basic examples. This will help you get the most out of our live session!
 
 ### 📚 Documentation:
 
@@ -102,8 +105,6 @@ Let's deploy your realm to Gno.land and register it in the Hall of Realms so the
 - [Deploying Gno Packages](https://docs.gno.land/builders/deploy-packages)
 
 ## Step 6 - Conclusion & Wrap-Up
-
-### 📑 Description:
 
 Congratulations on coding your first Gno.land realm! Let's consolidate your learning and set you up for continued success in the Gno.land ecosystem.
 
