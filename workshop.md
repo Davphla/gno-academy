@@ -21,7 +21,8 @@ Before diving into realm creation, we need to ensure your development environmen
     
     *Share video link: “How to install and set up your GnoLand environment”*
     
-    → basic setup, tools, and testing environment
+    → basic setup, tools, and testing environment: Create a keypair, faucet on portal loop, gnodev
+
     
 ### 📺 Watch:
 - [Setup local environment](https://www.youtube.com/watch?v=C8RuA_uU3Fs)
@@ -64,6 +65,7 @@ Understanding the concept of Home Realms is crucial before we start building. Le
 
 ## Step 2 - Live coding: Build Your First Realm
 
+- Create the architecture of the project
 - Start coding a basic realm
 - Introduce basic concepts and code structure
 - Show how to make transactions using **adena** and **gnokey**
@@ -99,7 +101,7 @@ Understanding the concept of Home Realms is crucial before we start building. Le
 
 Let's deploy your realm to Gno.land and register it in the Hall of Realms so the entire community can discover and interact with your creation.
 
-- Explain and guide during the process of publishing your realm
+- Explain and guide during the process of publishing your realm (using gnokey first)
 
 ### 📚 Documentation:
 - [Deploying Gno Packages](https://docs.gno.land/builders/deploy-packages)
