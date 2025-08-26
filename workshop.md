@@ -7,6 +7,10 @@
 
 ## Introduction
 
+In this session, you’ll learn how to build your own Home Realm — a personalized, on-chain space that reflects your creativity and personality. You will deploy a simple dApp, explore core concepts of the Gno.land ecosystem, and learn how to test, publish, and share your realm with the wider community.
+
+By the end of this guide, you’ll have a functioning realm deployed and the knowledge to continue experimenting and building on Gno.land.
+
 ## Step 0 - Prerequisites & Setup
 
 ### 📑 Description:
