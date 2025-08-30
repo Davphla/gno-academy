@@ -1,9 +1,9 @@
-# Create Your First dApp on Gno.land: Build Your Home Realm
+# Create Your First dApp on Gno.land: Build Your Home Realm 🏠
 
-✔️ Create and personalize your own Home Realm on Gno.land  
-✔️ Deploy a simple decentralized application (dApp)  
-✔️ Learn to interact with and test your realm    
-✔️ Publish your realm in the Hall of Realms  
+- Create and personalize your own Home Realm on Gno.land  
+- Deploy a simple decentralized application (dApp)  
+- Learn to interact with and test your realm    
+- Publish your realm in the Hall of Realms  
 
 ## Introduction
 
@@ -11,82 +11,136 @@ In this session, you’ll learn how to build your own Home Realm — a personali
 
 By the end of this guide, you’ll have a functioning realm deployed and the knowledge to continue experimenting and building on Gno.land.
 
-## Step 0 - Prerequisites & Setup
+> **Note**: During this workshop, we will use the **latest testnet network** (**Test 7** as of today). If any part seems unusual or broken, don't hesitate to ask questions in the [Official Discord server](https://discord.com/invite/ubN5NXaMYZ) and create issues in this repositories!
+We are available to answer any question.
 
-### 📑 Description:
+## Step 0 - Prerequisites & Setup
 
 Before diving into realm creation, we need to ensure your development environment is properly configured for Gno.land development.
 
-- **Introduction: What is Gno.land?**
+**Gno.land** is a blockchain platform that enables developers to build decentralized applications using **Gnolang** (Gno), a deterministic variant of the Go programming language. Unlike traditional smart contract platforms, Gno.land emphasizes **code readability**, **composability**, and **transparency** by making all code human-readable on-chain. The platform features "**realms**" - smart contracts that maintain state and can interact with each other, and "**pure packages**" - reusable libraries that provide code without maintaining state, enabling developers to share common utilities, data structures, and algorithms across the ecosystem. It enables a **composable ecosystem** where developers can build upon existing functionality. With its focus on simplicity and developer experience, Gno.land aims to make blockchain development more accessible while maintaining the security and decentralization benefits of distributed systems.
     
-    Brief overview
-    
-- **Installation & Environment Setup**
-    
-    *Share video link: “How to install and set up your GnoLand environment”*
-    
-    → basic setup, tools, and testing environment: Create a keypair, faucet on portal loop, gnodev
+### Installation & Environment Setup
+- Installing the Gno toolchain
+- Setting up your development environment
+- Running `gnodev` for local development
+- Create your first keypair:
+    - [Gnokey](https://docs.gno.land/users/interact-with-gnokey) - CLI Wallet
+    - [Adena Wallet](https://www.adena.app/) - Browser Extension Wallet
+- Setup IDE extension through `Gnopls`
 
-    
 ### 📺 Watch:
-- [Setup local environment](https://www.youtube.com/watch?v=C8RuA_uU3Fs)
-- [Extend your IDE capabilities with Gnopls](https://www.youtube.com/watch?v=-byuFoVYp30)
-- [Build and test your first dApp](https://www.youtube.com/watch?v=nzo6QgxQHgw&t=161s)
+- [Setup local environment](https://www.youtube.com/watch?v=C8RuA_uU3Fs) - [README](https://github.com/samouraiworld/peerdev/tree/main/gno-tutorials/tutorials/1-initialisation)
+- [Extend your IDE capabilities with Gnopls](https://www.youtube.com/watch?v=-byuFoVYp30) - [README](https://github.com/samouraiworld/peerdev/blob/main/gno-tutorials/short-tutorials/5-GnoPLS/sources.md)
+- [Interactive Documentation - /r/docs](https://www.youtube.com/watch?v=zpGxMQo3V-o)
     
-> 💡 **Tip**: We recommend watching these videos before the workshop and attempting to run the basic examples. This will help you get the most out of our live session!
+> 💡 **Tip**: We recommend watching these videos and attempting to run the basic examples. They are made to be efficient and updated. This will help you get the most out of our explanation through live session! 
 
 ### 📚 Documentation:
-
 - [What is Gno?](https://docs.gno.land/builders/what-is-gnolang)
-    
+- [Anatomy of a Gno Package](https://docs.gno.land/builders/anatomy-of-a-gno-package)
+- [Local dev with Gnodev](https://docs.gno.land/builders/local-dev-with-gnodev)
+- [Interact with Gnokey](https://docs.gno.land/users/interact-with-gnokey)
+- [Adena Wallet](https://www.adena.app/)
 
-## Step 1 - What is a Home Realm + objectives?
+## Step 1 - What is a Home Realm?
 
-### 📑 Description:
+Understanding the concept of Home Realms is crucial before we start building one. Let's explore what they are and what we'll accomplish in this workshop.
 
-Understanding the concept of Home Realms is crucial before we start building. Let's explore what they are and what we'll accomplish in this workshop.
+- A **Realm** is a smart contract on Gno.land that can store data and run code. Think of it like a mini-application that lives on the blockchain.
 
-- **What is a Realm?**
-    
-    Explain the concept: a Home Realm is your personal decentralized space on Gno.land, etc…
+- A **Home Realm** is your personal space on Gno.land. It's like having your own webpage on the blockchain where you can build whatever you want - a simple profile, a game, or anything that shows your personality.
 
-- **What is a Home Realm?**
-
-- **Objectives of the workshop/video:**
-    - Create et personalize your own Home Realm
-    - Deploy a simple dApp (your realm)
-    - Learn to interact with it and test it
-- **Examples & Inspirations:**
-    
-    → Show examples of some realms
-    
-    → Show the *Hall of Realms* with a variety of realms and their features/games to inspire
-    
-> 💡 **Inspiration Tip**: Think about what makes you unique. Your realm should reflect your personality, interests, or just you having fun.
+### **Examples & Inspirations:**
+- [Hall of Realm](https://gno.land/r/leon/hor)
+- [Sacha Home Realm](https://gno.land/r/sacha/home)
+- [Leon Home Realm](https://gno.land/r/leon/home)
+- [Gnomaze](https://gno.land/r/gfanton/gnomaze)
+- [Miko's Calculator](https://gno.land/r/miko/calculator)
     
 ### 📚 Documentation:
 - [Understanding Gno Packages](https://docs.gno.land/resources/gno-packages)
 
-## Step 2 - Live coding: Build Your First Realm
+## Step 2 - Claim Your Username & Get Test Tokens
 
-- Create the architecture of the project
-- Start coding a basic realm
-- Introduce basic concepts and code structure
-- Show how to make transactions using **adena** and **gnokey**
-- Demonstrate how to use ```std.CurrentRealm().Address()```
-- Write simple logic: e.g., a basic welcome message or vote
+Before building your realm, you need:
+1. **A username** on Gno.land 
+2. **Test tokens** to deploy your realm
+
+### Register Username
+- Visit: [gno.land/r/gnoland/users](https://test7.testnets.gno.land/r/gnoland/users)
+- Choose a unique username (lowercase, no special characters)
+- Register using your wallet
+
+### Get Test Tokens
+- Visit: [faucet.gno.land](https://faucet.gno.land/)
+- Set your wallet address
+- Request tokens
+
+### 📺 Watch:
+- [Username Registration Guide](https://www.youtube.com/watch?v=R5t1GmBRUVk)
+
+## Step 3 - Live Coding: Build Your First Realm
+
+Now for the exciting part! Let's build your first Home Realm step by step. We'll create a simple but functional realm that you can personalize and expand upon.
+
+Let's start by creating the proper structure for your Home Realm project:
+
+- **Initialize the Gno Module**
+```sh
+gno mod init gno.land/r/[your-username]/home
+```
+
+This creates a `gnomod.toml` and a `home.gno` files.
+```
+├── gnomod.toml      # Module configuration (auto-generated)
+└── home.gno         # Your main realm code 
+```
+
+### `gnomod.toml` Configuration
+
+It is the configuration file for your realm, similar to `go.mod` in Go.
+
+```toml
+module = "gno.land/r/[your-username]/home" 
+gno = "0.9"
+```
+
+> 💡 **Important**: Replace `[your-username]` with your actual username
+
+### 📚 Documentation:
+- [Configuring Gno Projects](https://docs.gno.land/resources/configuring-gno-projects/)
+
+### `home.gno` Realm
+
+#### Essential Functions
+- **`Render()`** - How your realm displays content (like a web page)
+- **`init()`** - Setting up your realm when it's first deployed
+- **Public functions** - Let users call that function through transactions to your realm
+
+> 💡 **Tip**: A function become Public in Go/Gno when its first letter is in **U**ppercase.
+
+#### Authentication & Security
+- **`std.CurrentRealm().Address()`** - Getting your realm's identity
+- **`std.GetOrigCaller()`** - Knowing who is calling your functions
+- **Access control** - Making sure only you can update certain things
+
+> 💡 **Tip**: You can test your home realm using `gnodev /path/to/your/realm`. 
 
 ### 📚 Documentation:
 - [Standard Libraries](https://docs.gno.land/resources/gno-stdlibs)
 
-## Step 3 - Testing your realm
+## Step 4 - Testing Your Realm
 
 - Show how to test the dApp
+
+### 📺 Watch:
+- [Build and test your first dApp](https://www.youtube.com/watch?v=nzo6QgxQHgw&t=161s)
 
 ### 📚 Documentation:
 - [Running & testing Gno code](https://docs.gno.land/resources/gno-testing)
 
-## Step 4 - Go Further: Explore More Packages & Fun with Games
+## Step 5 - Go Further: Explore More Packages & Fun with Games
 
 - Show additional useful packages for realms
 - Talk about Gno digest to stay up to date on new packages
@@ -99,7 +153,7 @@ Understanding the concept of Home Realms is crucial before we start building. Le
 - [ASCII UI Elements](https://gno.land/p/lou/ascii)
 - [Art Examples](https://gno.land/r/demo/art)
 
-## Step 5 - Save Your Realm in the Hall of Realms (HOR)
+## Step 6 - Save Your Realm in the Hall of Realms (HOR)
 
 ### 📑 Description:
 
@@ -107,10 +161,13 @@ Let's deploy your realm to Gno.land and register it in the Hall of Realms so the
 
 - Explain and guide during the process of publishing your realm (using gnokey first)
 
+### 📺 Watch:
+- [Deploying Gno Packages](https://www.youtube.com/watch?v=B7bSreCwIls)
+
 ### 📚 Documentation:
 - [Deploying Gno Packages](https://docs.gno.land/builders/deploy-packages)
 
-## Step 6 - Conclusion & Wrap-Up
+## Step 7 - Conclusion & Wrap-Up
 
 Congratulations on coding your first Gno.land realm! Let's consolidate your learning and set you up for continued success in the Gno.land ecosystem.
 
