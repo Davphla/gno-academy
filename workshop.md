@@ -12,7 +12,7 @@ In this session, you’ll learn how to build your own Home Realm — a personali
 By the end of this guide, you’ll have a functioning realm deployed and the knowledge to continue experimenting and building on Gno.land.
 
 > **Note**: During this workshop, we will use the **latest testnet network** (**Test 7** as of today). If any part seems unusual or broken, don't hesitate to ask questions in the [Official Discord server](https://discord.com/invite/ubN5NXaMYZ) and create issues in this repositories!
-We are available to answer any question.
+We are available there to answer any question.
 
 ## Step 0 - Prerequisites & Setup
 
@@ -67,15 +67,15 @@ Before building your realm, you need:
 1. **A username** on Gno.land 
 2. **Test tokens** to deploy your realm
 
-### Register Username
-- Visit: [gno.land/r/gnoland/users](https://test7.testnets.gno.land/r/gnoland/users)
-- Choose a unique username (lowercase, no special characters)
-- Register using your wallet
-
 ### Get Test Tokens
 - Visit: [faucet.gno.land](https://faucet.gno.land/)
 - Set your wallet address
 - Request tokens
+
+### Register Username
+- Visit: [gno.land/r/gnoland/users](https://test7.testnets.gno.land/r/gnoland/users)
+- Choose a unique username (lowercase, no special characters)
+- Register using your wallet
 
 ### 📺 Watch:
 - [Username Registration Guide](https://www.youtube.com/watch?v=R5t1GmBRUVk)
@@ -99,7 +99,7 @@ This creates a `gnomod.toml` and a `home.gno` files.
 
 ### `gnomod.toml` Configuration
 
-It is the configuration file for your realm, similar to `go.mod` in Go.
+It is the configuration file for your realm.
 
 ```toml
 module = "gno.land/r/[your-username]/home" 
@@ -107,6 +107,10 @@ gno = "0.9"
 ```
 
 > 💡 **Important**: Replace `[your-username]` with your actual username
+
+One interesting *to come* configuration field is `private`.
+It marks the package as unimportable by any other package, and can be re-uploaded as many time - the new version fully overwriting the old one.
+It is used for packages meant to be changed, such as the **home** realm of a specific user.
 
 ### 📚 Documentation:
 - [Configuring Gno Projects](https://docs.gno.land/resources/configuring-gno-projects/)
