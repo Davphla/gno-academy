@@ -29,10 +29,11 @@ Before diving into realm creation, we need to ensure your development environmen
     - [Adena Wallet](https://www.adena.app/) - Browser Extension Wallet
 - Setup IDE extension through `Gnopls`
 
+The next guides will help you through all this tasks.
+
 ### 📺 Watch:
 - [Setup local environment](https://www.youtube.com/watch?v=C8RuA_uU3Fs) - [README](https://github.com/samouraiworld/peerdev/tree/main/gno-tutorials/tutorials/1-initialisation)
 - [Extend your IDE capabilities with Gnopls](https://www.youtube.com/watch?v=-byuFoVYp30) - [README](https://github.com/samouraiworld/peerdev/blob/main/gno-tutorials/short-tutorials/5-GnoPLS/sources.md)
-- [Interactive Documentation - /r/docs](https://www.youtube.com/watch?v=zpGxMQo3V-o)
     
 > 💡 **Tip**: We recommend watching these videos and attempting to run the basic examples. They are made to be efficient and updated. This will help you get the most out of our explanation through live session! 
 
@@ -58,6 +59,9 @@ Understanding the concept of Home Realms is crucial before we start building one
 - [Gnomaze](https://gno.land/r/gfanton/gnomaze)
 - [Miko's Calculator](https://gno.land/r/miko/calculator)
     
+### 📺 Watch:
+- [Interactive Documentation - /r/docs](https://www.youtube.com/watch?v=zpGxMQo3V-o)
+
 ### 📚 Documentation:
 - [Understanding Gno Packages](https://docs.gno.land/resources/gno-packages)
 
