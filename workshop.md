@@ -46,8 +46,6 @@ The next guides will help you through this tasks:
 
 ## Step 1 - What is a Home Realm?
 
-Understanding the concept of Home Realms is crucial before we start building one. Let's explore what they are and what we'll accomplish in this workshop.
-
 - A **Realm** is a smart contract on Gno.land that can store data and run code. Think of it like a mini-application that lives on the blockchain.
 
 - A **Home Realm** is your personal space on Gno.land. It's like having your own webpage on the blockchain where you can build whatever you want - a simple profile, a game, or anything that shows your personality.
