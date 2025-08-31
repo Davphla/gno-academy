@@ -76,7 +76,7 @@ Before building your realm, you need:
 
 ### Register Username
 - Visit: [gno.land/r/gnoland/users](https://test7.testnets.gno.land/r/gnoland/users)
-- Choose a unique username (lowercase, no special characters)
+- Choose a unique username that starts with 3 lowercase letters, ends with 3 digits, allows only the "_" special character, and is no more than 20 characters long
 - Register using your wallet
 
 ### 📺 Watch:
@@ -159,7 +159,11 @@ gno test /path/to/your/realm/directory
 Now that you have a basic Home Realm, let's enhance it with powerful packages and add interactive elements! 
 
 **You are now autonomous** to build whatever sparks your creativity. **Experiment, play, and iterate** until you've created something that you feel proud of! 
-Everything possible in Go **is also possible in Gno**, so take inspiration from existing sources.
+
+__Here are a few project ideas to get you started:__
+- A turn-based combat game
+- A minimalist strategy game
+- An art gallery that allows user interaction
 
 ### 📚 Documentation:
 - [SVG Generation Library](https://gno.land/p/demo/svg)
