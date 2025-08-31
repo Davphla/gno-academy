@@ -29,7 +29,7 @@ Before diving into realm creation, we need to ensure your development environmen
     - [Adena Wallet](https://www.adena.app/) - Browser Extension Wallet
 - Setup IDE extension through `Gnopls`
 
-The next guides will help you through all this tasks.
+The next guides will help you through this tasks:
 
 ### 📺 Watch:
 - [Setup local environment](https://www.youtube.com/watch?v=C8RuA_uU3Fs) - [README](https://github.com/samouraiworld/peerdev/tree/main/gno-tutorials/tutorials/1-initialisation)
