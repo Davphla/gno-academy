@@ -84,7 +84,7 @@ Before building your realm, you need:
 
 Now for the exciting part! Let's build your first Home Realm step by step. We'll create a simple but functional realm that you can personalize and expand upon.
 
-Let's start by creating the proper structure for your Home Realm project:
+Let's start by creating the proper structure for your **Home Realm project**:
 
 - **Initialize the Gno Module**
 ```sh
@@ -111,6 +111,7 @@ gno = "0.9"
 One interesting *to come* configuration field is `private`.
 It marks the package as unimportable by any other package, and can be re-uploaded as many time - the new version fully overwriting the old one.
 It is used for packages meant to be changed, such as the **home** realm of a specific user.
+So keep it in minds when it is released!
 
 ### 📚 Documentation:
 - [Configuring Gno Projects](https://docs.gno.land/resources/configuring-gno-projects/)
@@ -129,14 +130,21 @@ It is used for packages meant to be changed, such as the **home** realm of a spe
 - **`std.GetOrigCaller()`** - Knowing who is calling your functions
 - **Access control** - Making sure only you can update certain things
 
-> 💡 **Tip**: You can test your home realm using `gnodev /path/to/your/realm`. 
+> 💡 **Tip**: You can test your home realm in Gnoweb using `gnodev /path/to/your/realm`. 
 
 ### 📚 Documentation:
 - [Standard Libraries](https://docs.gno.land/resources/gno-stdlibs)
 
 ## Step 4 - Testing Your Realm
 
-- Show how to test the dApp
+Testing is crucial to ensure your realm works correctly before deploying it to the blockchain (Especially in **immutable programming** like it is often in blockchain programming). 
+You should test ideally **every functions** and their **edge cases**. 
+They should be executed after modification. It is also a good practice to ensure gas usage isn't too expensive.
+
+```bash
+# Run tests for your realm
+gno test /path/to/your/realm
+```
 
 ### 📺 Watch:
 - [Build and test your first dApp](https://www.youtube.com/watch?v=nzo6QgxQHgw&t=161s)
@@ -146,10 +154,10 @@ It is used for packages meant to be changed, such as the **home** realm of a spe
 
 ## Step 5 - Go Further: Explore More Packages & Fun with Games
 
-- Show additional useful packages for realms
-- Talk about Gno digest to stay up to date on new packages
-- Show how to implem a simple game mechanics into your realm
-- Suggest fun ideas/games they can build next
+Now that you have a basic Home Realm, let's enhance it with powerful packages and add interactive elements! 
+
+**You are now autonomous** to build whatever sparks your creativity. **Experiment, play, and iterate** until you've created something that you feel proud of! 
+Everything possible in Go **is also possible in Gno**, so take inspiration from existing sources.
 
 ### 📚 Documentation:
 - [SVG Generation Library](https://gno.land/p/demo/svg)
@@ -159,11 +167,22 @@ It is used for packages meant to be changed, such as the **home** realm of a spe
 
 ## Step 6 - Save Your Realm in the Hall of Realms (HOR)
 
-### 📑 Description:
+Let's deploy your realm to Gno.land and register it in the [**Hall of Realms**](https://test7.testnets.gno.land/r/leon/hor) 👑 so the entire community can discover and interact with your creation.
 
-Let's deploy your realm to Gno.land and register it in the Hall of Realms so the entire community can discover and interact with your creation.
+Simply import the Hall of Realms in your code, and call the `Register()` function inside your realm `init()`, as shown below:
+```go
+package myrealm
 
-- Explain and guide during the process of publishing your realm (using gnokey first)
+import `gno.land/r/leon/hor`
+
+func init() {
+	hor.Register(cross, `My Gnome App`, `This is my submission to the Hall of Realms.`)
+}
+```
+
+And then deploy your realm using the `maketx addpkg` command by following the next guides.
+
+If done correctly, it should appear in the [Hall](https://test7.testnets.gno.land/r/leon/hor:hall).
 
 ### 📺 Watch:
 - [Deploying Gno Packages](https://www.youtube.com/watch?v=B7bSreCwIls)
@@ -171,12 +190,17 @@ Let's deploy your realm to Gno.land and register it in the Hall of Realms so the
 ### 📚 Documentation:
 - [Deploying Gno Packages](https://docs.gno.land/builders/deploy-packages)
 
+> 💡 **Note**: Be mindful to always interact with the same network, so `test7.testnets.gno.land`
+
 ## Step 7 - Conclusion & Wrap-Up
 
-Congratulations on coding your first Gno.land realm! Let's consolidate your learning and set you up for continued success in the Gno.land ecosystem.
+Congratulations on coding your first Gno.land realm! You learn the basic of Gno programmation by creating your **Home Realm**.
+Let's consolidate your learning in the Gno.land ecosystem by reading the next guides about **Effective Programmation** in Gno:
 
-- Best practices for building
-- Recap key learnings
-- Encourage to experiment and share the realms
+### 📺 Watch:
+- [Effective programming in Gno](https://www.youtube.com/watch?v=UNJSuMdjTFA)
+
+### 📚 Documentation:
+- [Effective Gno](https://docs.gno.land/resources/effective-gno/)
 
 ### 🌟 Don't forget to share your realm with the community and inspire the next generation of builders!
