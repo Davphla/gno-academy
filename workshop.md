@@ -132,7 +132,7 @@ So keep it in minds when it is released!
 - **`std.GetOrigCaller()`** - Knowing who is calling your functions
 - **Access control** - Making sure only you can update certain things
 
-> 💡 **Tip**: You can test your home realm in Gnoweb using `gnodev /path/to/your/realm`. 
+> 💡 **Tip**: You can test your home realm in Gnoweb using `gnodev /path/to/your/realm/directory`. 
 
 ### 📚 Documentation:
 - [Standard Libraries](https://docs.gno.land/resources/gno-stdlibs)
@@ -145,7 +145,7 @@ They should be executed after modification. It is also a good practice to ensure
 
 ```bash
 # Run tests for your realm
-gno test /path/to/your/realm
+gno test /path/to/your/realm/directory
 ```
 
 ### 📺 Watch:
