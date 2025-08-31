@@ -154,7 +154,7 @@ gno test /path/to/your/realm/directory
 ### 📚 Documentation:
 - [Running & testing Gno code](https://docs.gno.land/resources/gno-testing)
 
-## Step 5 - Go Further: Explore More Packages & Fun with Games
+## Step 5 - Go Further: Explore More Packages 
 
 Now that you have a basic Home Realm, let's enhance it with powerful packages and add interactive elements! 
 
