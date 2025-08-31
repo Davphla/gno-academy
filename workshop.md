@@ -88,7 +88,7 @@ Now for the exciting part! Let's build your first Home Realm step by step. We'll
 
 Let's start by creating the proper structure for your **Home Realm project**:
 
-- **Initialize the Gno Module**
+### **Initialize the Gno Module**
 ```sh
 gno mod init gno.land/r/[your-username]/home
 ```
@@ -101,7 +101,7 @@ This creates a `gnomod.toml` and a `home.gno` files.
 
 ### `gnomod.toml` Configuration
 
-It is the configuration file for your realm.
+`gnomod.toml` is the configuration file for your realm.
 
 ```toml
 module = "gno.land/r/[your-username]/home" 
