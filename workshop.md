@@ -121,7 +121,7 @@ So keep it in minds when it is released!
 ### `home.gno` Realm
 
 #### Essential Functions
-- **`Render()`** - How your realm displays content (like a web page)
+- **`Render(_ string) string`** - How your realm displays content (like a web page) from the returned markdown formatted string
 - **`init()`** - Setting up your realm when it's first deployed
 - **Public functions** - Let users call that function through transactions to your realm
 
