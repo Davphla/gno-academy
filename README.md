@@ -1,3 +1,11 @@
+**Notice**: This is public for review purpose. It will be linked to `Samourai coop` organization and `PeerDev` channel.
+It compose a single workshop that was made to test a more interactive concept.
+Feel free to review our work!
+
+---
+
+Draft notes:
+
 # Workshop
 - Introduction - What is gno ? Your first realm
 - Exercise - Accompagnement vidéo
